@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<style>
+    .calc-body{
+        width: 45vw;
+    }
+    @media only screen and (max-width: 415px){
+        .calc-body{
+            width: 100%;
+        }
+    }
+    .cursor-pointer{
+        cursor: pointer;
+    }
+</style>
+
+<body class="bg-light text-center">
+    <div class="calc-body container bg-secondary rounded-2 mt-5 py-2 px-3">
+        <div class="row px-2 py-1">
+            <div class="col align-self-center bg-dark rounded-2 p-0">
+                <p class="text-uppercase text-center text-primary fw-bold fs-1 mb-0">Calculator</p>
+            </div>
+        </div>
+        <div class="row py-2 px-2">
+            <div class="display-box bg-white rounded-2 p-2">
+                <p id="show-output" class="fs-2 mb-0 text-end">Display</p>
+            </div>
+        </div>
+        <div class="row py-1 g-2">
+            <div class="cursor-pointer col-3">
+                <p class="bg-warning operators mb-0 text-center fs-2 rounded-1">AC</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-warning operators mb-0 text-center fs-2 rounded-1">+/-</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-warning operators mb-0 text-center fs-2 rounded-1">%</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-warning operators mb-0 text-center fs-2 rounded-1">/</p>
+            </div>
+        </div>
+        <div class="row py-1 g-2">
+            <div class="cursor-pointer col-3">
+                <p class="bg-info mb-0 text-center fs-2 rounded-1">7</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-info mb-0 text-center fs-2 rounded-1">8</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-info mb-0 text-center fs-2 rounded-1">9</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-warning mb-0 text-center fs-2 rounded-1">*</p>
+            </div>
+        </div>
+        <div class="row py-1 g-2">
+            <div class="cursor-pointer col-3">
+                <p class="bg-info mb-0 text-center fs-2 rounded-1">4</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-info mb-0 text-center fs-2 rounded-1">5</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-info mb-0 text-center fs-2 rounded-1">6</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-warning mb-0 text-center fs-2 rounded-1">-</p>
+            </div>
+        </div>
+        <div class="row py-1 g-2">
+            <div class="cursor-pointer col-3">
+                <p class="bg-info mb-0 text-center fs-2 rounded-1">3</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-info mb-0 text-center fs-2 rounded-1">2</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-info mb-0 text-center fs-2 rounded-1">1</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-warning mb-0 text-center fs-2 rounded-1">+</p>
+            </div>
+        </div>
+        <div class="row py-1 g-2">
+            <div class="cursor-pointer col-6">
+                <p class="bg-info mb-0 text-center fs-2 rounded-1">0</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-info mb-0 text-center fs-2 rounded-1">.</p>
+            </div>
+            <div class="cursor-pointer col-3">
+                <p class="bg-warning mb-0 text-center fs-2 rounded-1"> = </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
